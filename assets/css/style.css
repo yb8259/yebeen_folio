@@ -3429,3 +3429,94 @@ footer {
 .card p span {
   display: inline-block;
 }
+/* =========================
+   MOBILE FIX : index.html
+   ========================= */
+   @media (max-width: 991px) {
+
+    /* 전체 레이아웃 세로 전환 */
+    .home-layout {
+      flex-direction: column;
+    }
+  
+    /* 좌/우 영역 width 해제 */
+    .left-area,
+    .right-area {
+      width: 100% !important;
+      flex: none;
+    }
+  
+    /* 우측 카드들도 전체 폭 */
+    .right-area .card {
+      width: 100% !important;
+    }
+  
+    /* Recent Projects 높이 고정 해제 */
+    .card-projects {
+      width: 100% !important;
+      height: auto !important;
+      max-height: none;
+    }
+  
+    .card-projects .projects-main {
+      max-height: none;
+      overflow: visible;
+    }
+  
+    /* Work / Expert 카드 높이 자동 */
+    .work-experiance-card,
+    .expertise-card {
+      height: auto;
+    }
+  
+    /* 카드 간 간격 정리 */
+    .right-area .card {
+      margin-bottom: 24px;
+    }
+  }
+/* =========================
+   MOBILE FIX : index.html
+   ========================= */
+   @media (max-width: 991px) {
+
+    /* 전체 레이아웃 세로 스택 */
+    .home-layout {
+      flex-direction: column;
+    }
+  
+    /* 좌/우 영역 폭 해제 */
+    .left-area,
+    .right-area {
+      width: 100% !important;
+      flex: none;
+    }
+  
+    /* 우측 카드 전체폭 */
+    .right-area .card {
+      width: 100% !important;
+    }
+  
+    /* Recent Projects 고정 높이 제거 */
+    .card-projects {
+      width: 100% !important;
+      height: auto !important;
+      max-height: none;
+    }
+  
+    .card-projects .projects-main {
+      overflow: visible;
+      max-height: none;
+    }
+  
+    /* Work / Expert 카드 자동 높이 */
+    .work-experiance-card,
+    .expertise-card {
+      height: auto;
+    }
+  
+    /* 카드 간 여백 */
+    .right-area .card {
+      margin-bottom: 24px;
+    }
+  }
+    
